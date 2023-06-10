@@ -1,5 +1,13 @@
 <resources>
-    <string name="app_name">My Application</string>
-    <string name="app_description">Your app description goes here.</string>
+    <string name="app_name">Articles</string>
+    <string name="app_description">The above app is a simple Android application that fetches and displays the
+        top stories from the New York Times API. It utilizes the RecyclerView to present a list of articles with
+        their titles and abstracts. The app also includes a search functionality that allows users to search for
+        specific articles based on their titles..</string>
     <string name="group_members">Group Members</string>
+    <string-array name="dropdown_items">
+        <item>world</item>
+        <item>politics</item>
+        <item>science</item>
+    </string-array>
 </resources>

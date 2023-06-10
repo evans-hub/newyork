@@ -4,10 +4,13 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -43,6 +46,7 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.ArticleV
                 Intent intent = new Intent(holder.itemView.getContext(), Details.class);
                 intent.putExtra("title", clickedItem.getTitle());
                 intent.putExtra("abstract", article.getAbstract());
+
                 holder.itemView.getContext().startActivity(intent);
             }
         });
@@ -62,6 +66,7 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.ArticleV
             super(itemView);
             titleTextView = itemView.findViewById(R.id.titleTextView);
             abstractTextView = itemView.findViewById(R.id.abstractTextView);
+
         }
     }
 }

@@ -6,19 +6,30 @@
     android:orientation="vertical"
     android:padding="16dp"
     tools:context=".ApiActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
     <EditText
         android:id="@+id/editTextSearch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Search articles"
         android:inputType="text"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
         android:maxLines="1" />
-    <Button
-        android:id="@+id/buttonSearch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Search"
-        android:layout_gravity="end" />
+<!--
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/filter"
+        android:id="@+id/filter"
+        />
+-->
+
+    </LinearLayout>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/articleRecyclerView"
         android:layout_width="match_parent"
